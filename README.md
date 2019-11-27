@@ -1,30 +1,45 @@
-# pic-plug
+# pic-marker
+A Tool for Marking Pictures. 
+Similar to editing after screenshots.
+Now,only for Vue
 
-> A Vue.js project
+[![npm version](https://badge.fury.io/js/pic-marker.svg)](https://badge.fury.io/js/pic-marker)
+![Image text](https://github.com/yujiant/pic-marker/blob/master/examples/assets/marked.png)
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
+## Installation 
+Install from GitHub via NPM
+```bash
+npm install pic-marker
+```
+## Usage
 
-# serve with hot reload at localhost:8080
-npm run dev
+To use `pic-marker`, simply import it and the `css` file, and call `Vue.use()` to install.
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```html
+<template>
+  <div id="app">
+    <!-- component -->
+     <pic-marker 
+       :picUrl="picUrl" //图片地址
+       @close="handelClose" //点击关闭图标的回调
+       @complete="handelComplete"//点击完成图标的回调
+     />
+  </div>
+</template>
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+main.js
+```javascript
+import Vue from 'vue'
+import Marker from 'pic-marker'
+import 'pic-marker/lib/pic-marker.css'
+Vue.use(Marker)
+
+new Vue({
+  router,
+  store,
+  components: { App },
+  template: '<App/>',
+}).$mount('#app')
+```

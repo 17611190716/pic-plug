@@ -1,0 +1,72 @@
+{
+  "id": "1448026",
+  "name": "pic-marker",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "https://github.com/yujiant/pic-marker项目的图标",
+  "glyphs": [
+    {
+      "icon_id": "10159994",
+      "name": "正方形",
+      "font_class": "square",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "11350184",
+      "name": "字体",
+      "font_class": "typeface",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "11350248",
+      "name": "箭头",
+      "font_class": "arrow",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "11350445",
+      "name": "撤销",
+      "font_class": "revoke",
+      "unicode": "e61e1",
+      "unicode_decimal": 942561
+    },
+    {
+      "icon_id": "11350469",
+      "name": "铅笔",
+      "font_class": "pencle",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "11350489",
+      "name": "对勾",
+      "font_class": "complete",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "11350569",
+      "name": "取消",
+      "font_class": "cancle",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "11350726",
+      "name": "下载",
+      "font_class": "download",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "11350821",
+      "name": "圆圈",
+      "font_class": "circle",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+
+
+.whiteboard{
+	border: 1px #ccc solid;
+	overflow: hidden;
+	max-width: 100%;
+	max-height: 100%;
+	white-space: nowrap;
+	background-color: rgba(255, 255, 255, 1);
+	color: white;
+	box-sizing: border-box;
+	position: relative;
+}
+/*工具条主体*/
+
+/* 白板 */
+.drawing-tools{
+	z-index: 3;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -180px;
+    position: absolute;
+}
+.drawing-tools ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.drawing-tools .drawing-tools-board{
+	height: 32px;
+	background-color: #333333;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px 0 10px 20px;
+	border-radius: 26px;
+    /* background-image: url("/whiteboard/img/drawing_tools.png"); */
+    /* background-repeat:no-repeat ; */
+}
+.drawing-tools .drawing-tools-board .fs-20{
+	font-size: 18px;
+}
+
+.drawing-tools .drawing-tools-board .board-items{
+   display: flex;
+}
+
+.drawing-tools .drawing-tools-board .board-items>li.active{
+	color: #cccccc;
+ }
+ .drawing-tools .drawing-tools-board .board-items>li .iconfont:hover{
+	color: #cccccc;
+ }
+
+.drawing-tools .drawing-tools-board>ul>li{
+    position: relative;
+    width: 40px;
+	cursor: pointer;
+	display: flex;
+	justify-items: center;
+}
+
+
+/*选择字体宽度 和颜色的面板*/
+.drawing-tools .drawing-tools-board>.outboard-rect{
+    position: absolute;
+    bottom:60px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+}
+.drawing-tools-board .rectType{
+	display: flex;
+	width: 350px;
+	height: 100%;
+	background-color: #333333;
+	border-radius: 3px;
+	margin: 0 auto;
+	padding-right:   2.5px;
+}
+.drawing-tools-board .rectType.w325{
+	width: 320px;
+}
+
+.drawing-tools-board .rectType>li{
+    cursor: pointer;
+}
+.outboard-rect .rectType-lineWidth-wraper{
+	display: flex;
+	align-items:center;
+	justify-content:space-around;
+	width: 80px;
+}
+.outboard-rect .rectType-lineWidth {
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	/* width: 30px; */
+}
+.outboard-rect .rectType-lineWidth .rectType-lineWidth-inner{
+	background-color: #cccccc;
+	border-radius: 12px;
+	cursor: pointer;
+	
+}
+.outboard-rect .rectType-lineWidth .rectType-lineWidth-inner.active{
+	background-color: green;
+}
+.outboard-rect .rectType-lineWidth .rectType-lineWidth-inner:hover{
+	background-color: green;
+}
+
+.outboard-rect .rectType-color {
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	width: 30px;
+}
+.outboard-rect .rectType-color .rectType-color-inner{
+	background-color: #cccccc;
+	width: 15px;
+	height: 15px;
+	box-sizing: border-box;
+	border: 7.5px solid;
+}
+.outboard-rect .rectType-color .rectType-color-inner.active{
+	border-width: 3px;
+}
+.outboard-rect .rectType-color .rectType-color-inner:hover{
+	border-width: 3px;
+}
+
+.outboard-rect .rectType-fontSize {
+	width: 50px;
+	height: 20px;
+	margin-top: 4px;
+}
+
+.drawing-tools .drawing-tools-board {
+	height: auto;
+}
+/* canvas样式 */
+.canvas_move{
+    float: left;
+    display: inline;
+	/* cursor: url('/whiteboard/img/default.cur') 6 0,auto; */
+	cursor: move;
+}
+
+.canvas_crosshair{
+    float: left;
+    display: inline;
+    cursor: crosshair;/*光标显示为十字*/
+}
+.canvas_text{
+    float: left;
+    display: inline;
+    cursor: text;/*光标显示为十字*/
+}
+.canvas_crosshair{
+    float: left;
+    display: inline;
+    cursor: crosshair;/*光标显示为十字*/
+}
+.canvas_default{
+    float: left;
+    display: inline;
+    cursor: default;/*光标显示为箭头*/
+}
+.canvas_pencil{
+    /* border-right: 1px #ccc solid; */
+    /* float: left; */
+    /* display: inline; */
+    cursor: url("../img/tools-pencil.png"),auto;
+}
+#textInput{
+    border:none;
+    outline:none;
+    position:absolute;
+    background-color: transparent;
+	width:100px;
+	line-height: 1.5;
+}
