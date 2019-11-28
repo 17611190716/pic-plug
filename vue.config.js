@@ -12,6 +12,7 @@ module.exports = {
         filename: 'index.html'
       }
     },
+    lintOnSave: false, //关闭eslint校验
     // https://blog.csdn.net/xiaomajia029/article/details/88320233
     // 解决You are using the runtime-only build of Vue where the template compiler is not available
     // configureWebpack: config => {

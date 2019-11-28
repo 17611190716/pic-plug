@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <pic-marker :picUrl="picUrl"/>
+    <pic-plug :picUrl="picUrl"/>
     <!-- <img crossorigin="Anonymous" :src="picUrl" alt=""> -->
     </div>
 </template>

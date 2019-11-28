@@ -34,7 +34,7 @@ import {
   // getBase64ByUrl
 } from "./index.js"; //canvas构造函数
 export default {
-  name:'pic-marker',
+  name:'pic-plug',
   data() {
     return {
       toolType: 0, //工具类型：0画笔，1矩形，2圆形，3单箭头，4文字,5撤销，6下载，7，返回，8保存
@@ -143,20 +143,20 @@ export default {
 
       let imgHtmlDiv= document.createElement('div')
       imgHtmlDiv.id='imgHtmlDiv'
-      imgHtmlDiv.setAttribute('contenteditable','true') 
+      imgHtmlDiv.setAttribute('contenteditable','true')
 
       let imgHtml= document.createElement('img')
-      
+
       // imgHtml.src=base64
       imgHtml.src='http://pic27.nipic.com/20130313/9252150_092049419327_2.jpg'
       console.log(imgHtml.src)
       imgHtml.id='base64Img'
-      
+
       document.body.appendChild(imgHtmlDiv)
       document.getElementById('imgHtmlDiv').appendChild(imgHtml)
       this.$nextTick(()=>{
-          var range = document.createRange();  
-          range.selectNode(document.getElementById('base64Img')); 
+          var range = document.createRange();
+          range.selectNode(document.getElementById('base64Img'));
           let section= window.getSelection()
           section.removeAllRanges(); //必须先清除选中的区域
           section.addRange(range)//然后添加区域

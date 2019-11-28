@@ -2,7 +2,7 @@
   "name": "pic-plug",
   "version": "1.0.0",
   "description": "JavaScript picture marker",
-  "main": "lib/pic-marker.umd.min.js",
+  "main": "lib/pic-plug.umd.min.js",
   "private": false,
   "license": "MIT",
   "keywords": [
@@ -20,7 +20,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name pic-marker --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name pic-plug --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
