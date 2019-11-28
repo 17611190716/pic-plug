@@ -1,7 +1,7 @@
 {
   "name": "pic-plug",
   "version": "1.0.1",
-  "description": "JavaScript picture marker",
+  "description": "图片画布工具",
   "main": "lib/pic-plug.umd.min.js",
   "private": false,
   "license": "MIT",
