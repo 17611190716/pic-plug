@@ -1,6 +1,6 @@
 {
   "name": "pic-plug",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript picture marker",
   "main": "lib/pic-plug.umd.min.js",
   "private": false,
