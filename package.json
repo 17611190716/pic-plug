@@ -1,6 +1,6 @@
 {
   "name": "pic-plug",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "图片画布工具",
   "main": "lib/pic-plug.umd.min.js",
   "private": false,
